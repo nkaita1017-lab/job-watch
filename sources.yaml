@@ -1,0 +1,29 @@
+# 監視するキーワード設定 — ここを書き換えるだけで動作が変わります
+
+# タイトルにこの語が「すべて」含まれるアイテムだけ新着表示の対象にします
+include_keywords:
+  - 動画
+
+# タイトルにこの語が1つでも含まれていたら除外します(空 [] なら除外なし)
+exclude_keywords: []
+
+# 1回の実行で「新着」として記録する最大件数
+max_items_per_run: 20
+
+# ─────────────────────────────────────────────────────
+# 監視するフィード。RSS(またはAtom)のURLを追加するだけで対象が増えます。
+# URLが取れたら1〜2行で貼り付けてください。
+# ─────────────────────────────────────────────────────
+sources:
+  - name: Googleニュース「動画編集 求人」
+    url: https://news.google.com/rss/search?q=%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86+%E6%B1%82%E4%BA%BA&hl=ja&gl=JP&ceid=JP:ja
+
+  - name: Googleニュース「動画制作 パート」
+    url: https://news.google.com/rss/search?q=%E5%8B%95%E7%94%BB%E5%88%B6%E4%BD%9C+%E3%83%91%E3%83%BC%E3%83%88&hl=ja&gl=JP&ceid=JP:ja
+
+  - name: Googleニュース「SNS制作 契約社員」
+    url: https://news.google.com/rss/search?q=SNS%E5%88%B6%E4%BD%9C+%E5%A5%91%E7%B4%84%E7%A4%BE%E5%93%A1&hl=ja&gl=JP&ceid=JP:ja
+
+  # 例: RSSを公開している求人サイトがあれば下の形式で追加
+  # - name: ○○求人サイト
+  #   url: https://example.com/rss.xml
